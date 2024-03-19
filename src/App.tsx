@@ -1,7 +1,8 @@
 import Header from "./components/Header";
+import Detail from "./pages/Detail";
 import Home from "./pages/Home";
 import { useCountryStore } from "./store";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const darkMode = useCountryStore((state) => state.darkMode);
@@ -13,7 +14,10 @@ function App() {
         }`}
       >
         <Header />
-        <Route path="/" element={<Home />}></Route>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Detail" element={<Detail />} />
+        </Routes>
       </div>
     </Router>
   );
