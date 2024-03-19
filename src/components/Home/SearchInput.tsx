@@ -35,7 +35,7 @@ export default function SearchInput() {
         <input
           type="text"
           placeholder="Search for a country…"
-          className={`outline-none placeholder:text-[#C4C4C4] ${
+          className={`outline-none placeholder:text-[#C4C4C4] text-[12px] ${
             darkMode
               ? "bg-[#2B3844] text-[#ffff]"
               : "bg-[#ffffff] text-[#2B3844]"

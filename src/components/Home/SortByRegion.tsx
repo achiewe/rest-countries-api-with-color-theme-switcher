@@ -6,7 +6,7 @@ export default function SortByRegion() {
     <div
       className={`w-[200px] ${
         darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
-      }  flex flex-grow justify-between items-center px-[14px] py-[19px]`}
+      }  flex flex-grow justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md`}
     >
       <h3
         className={`font-normal text-[12px] leading-[20px] ${
