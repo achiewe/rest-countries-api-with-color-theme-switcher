@@ -1,6 +1,6 @@
 export default function SearchInput() {
   return (
-    <div className="w-full flex flex-row items-center gap-[30px] bg-[#ffffff] pl-[15px] py-[20px]">
+    <div className="w-full flex flex-row items-center gap-[30px] bg-[#ffffff] pl-[15px] py-[14px] rounded-[5px] shadow-md">
       <svg
         fill="#000000"
         height="20px"
@@ -23,6 +23,11 @@ export default function SearchInput() {
           </g>
         </g>
       </svg>
+      <input
+        type="text"
+        placeholder="Search for a country…"
+        className="outline-none placeholder:text-[#C4C4C4]"
+      />
     </div>
   );
 }
