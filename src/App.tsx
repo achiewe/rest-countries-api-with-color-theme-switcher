@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import { useCountryStore } from "./store";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   const darkMode = useCountryStore((state) => state.darkMode);
