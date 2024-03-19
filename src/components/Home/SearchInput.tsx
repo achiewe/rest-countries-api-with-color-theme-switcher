@@ -1,8 +1,15 @@
+import { useCountryStore } from "../../store";
+
 export default function SearchInput() {
+  const darkMode = useCountryStore((state) => state.darkMode);
   return (
-    <div className="w-full flex flex-row items-center gap-[30px] bg-[#ffffff] pl-[15px] py-[14px] rounded-[5px] shadow-md">
+    <div
+      className={`w-full flex flex-row items-center gap-[30px] ${
+        darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
+      } pl-[15px] py-[14px] rounded-[5px] shadow-md mb-[50px]`}
+    >
       <svg
-        fill="#000000"
+        fill={darkMode ? "#ffffff" : "#000000"}
         height="20px"
         width="20px"
         version="1.1"
@@ -26,7 +33,9 @@ export default function SearchInput() {
       <input
         type="text"
         placeholder="Search for a country…"
-        className="outline-none placeholder:text-[#C4C4C4]"
+        className={`outline-none placeholder:text-[#C4C4C4] ${
+          darkMode ? "bg-[#2B3844] text-[#ffff]" : "bg-[#ffffff] text-[#2B3844]"
+        }`}
       />
     </div>
   );
