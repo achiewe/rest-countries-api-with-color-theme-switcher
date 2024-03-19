@@ -1,8 +1,8 @@
-import lightMoon from "../../public/lightMoon.png";
+import lightMoon from "../../public/assets/lightMoon.png";
 
 export default function Header() {
   return (
-    <div className="w-full flex flex-row items-center justify-between bg-[#ffffff] px-[16px] py-[30px] shadow-sm">
+    <div className="w-full flex flex-row items-center justify-between bg-[#ffffff] px-[16px] py-[30px] shadow-sm mb-[30px]">
       <h1 className="font-extrabold text-[14px] leading-[20px]">
         Where in the world?
       </h1>
