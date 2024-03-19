@@ -1,5 +1,5 @@
 function App() {
-  return <div></div>;
+  return <div className="w-full min-h-screen flex flex-col bg-[#fafafa]"></div>;
 }
 
 export default App;
