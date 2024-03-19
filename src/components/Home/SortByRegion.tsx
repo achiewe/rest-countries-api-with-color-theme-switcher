@@ -6,7 +6,7 @@ export default function SortByRegion() {
     <div
       className={`w-[200px] ${
         darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
-      }  flex flex-grow justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md`}
+      }  flex flex-grow justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md relative`}
     >
       <h3
         className={`font-normal text-[12px] leading-[20px] ${
@@ -28,6 +28,7 @@ export default function SortByRegion() {
           <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
         </g>
       </svg>
+      <div className="w-[200px] flex flex-col items-start px-[12px] py-[15px] bg-[#ffffff] absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]"></div>
     </div>
   );
 }
