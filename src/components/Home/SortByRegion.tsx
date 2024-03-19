@@ -28,12 +28,22 @@ export default function SortByRegion() {
           <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
         </g>
       </svg>
-      <div className="w-[200px] flex flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] bg-[#ffffff] absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]">
-        <h2> Africa</h2>
-        <h2> America</h2>
-        <h2> Asia</h2>
-        <h2> Europe</h2>
-        <h2> Oceania</h2>
+      <div className="w-[200px] flex flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[144px] bg-[#ffffff] absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]">
+        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+          Africa
+        </h2>
+        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+          America
+        </h2>
+        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+          Asia
+        </h2>
+        <h2 className="text-[12px] leading-[16px] font-norma cursor-pointerl">
+          Europe
+        </h2>
+        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+          Oceania
+        </h2>
       </div>
     </div>
   );
