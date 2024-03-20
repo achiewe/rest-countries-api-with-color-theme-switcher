@@ -1,4 +1,7 @@
+import Data from "../../../data.json";
+
 export default function CountryList() {
+  console.log(Data);
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
       <div className="w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] bg-[#ffffff] gap-[20px]">
