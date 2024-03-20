@@ -2,7 +2,7 @@ export default function CountryList() {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
       <div className="w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] bg-[#ffffff] gap-[20px]">
-        <img src="ragaa" alt="country flag" />
+        <img className="w-full rounded-t-5" src="ragaa" alt="country flag" />
         <div className="w-full flex flex-col items-start justify-start pl-[24px] gap-[20px]">
           <h1 className="font-extrabold text-[18px] leading-[26px]">
             country name
