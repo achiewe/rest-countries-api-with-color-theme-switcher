@@ -1,16 +1,19 @@
 import Data from "../../../data.json";
+import { useCountryStore } from "../../store";
 
 export default function CountryList() {
-  console.log(Data);
+  const darkMode = useCountryStore((state) => state.darkMode);
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
       {Data.map((country) => (
         <div
           key={country.alpha3Code}
-          className="w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] bg-[#ffffff] gap-[20px]"
+          className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] ${
+            darkMode ? "bg-[##2B3844]" : "bg-[#ffffff]"
+          }  gap-[20px]`}
         >
           <img
-            className="w-full rounded-t-5"
+            className="w-full rounded-t-[5px]"
             src={country.flag}
             alt="country flag"
           />
