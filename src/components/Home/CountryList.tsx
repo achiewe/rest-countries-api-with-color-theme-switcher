@@ -17,7 +17,7 @@ export default function CountryList() {
       {filteredCountries.map((country) => (
         <div
           key={country.alpha3Code}
-          className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] ${
+          className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] cursor-pointer ${
             darkMode ? "bg-[##2B3844]" : "bg-[#ffffff]"
           }  gap-[20px]`}
         >
