@@ -3,7 +3,7 @@ import { useCountryStore } from "../../store";
 export default function BackButton() {
   const darkMode = useCountryStore((state) => state.darkMode);
   return (
-    <button className="w-[104px] flex flex-row gap-[10px] justify-center items-center py-[10px] shadow-md rounded-[2px] bg-[#ffffff]">
+    <button className="w-[104px] flex flex-row gap-[10px] justify-center items-center py-[10px] shadow-md rounded-[2px] bg-[#ffffff] cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="17"
