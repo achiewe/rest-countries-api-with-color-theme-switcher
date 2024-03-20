@@ -3,9 +3,13 @@ import { useCountryStore } from "../../store";
 
 export default function CountryList() {
   const darkMode = useCountryStore((state) => state.darkMode);
+  const setFetchData = useCountryStore((state) => state.setFetchData);
+  const fetchData = useCountryStore((state) => state.fetchData);
+  setFetchData(Data);
+
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
-      {Data.map((country) => (
+      {fetchData.map((country) => (
         <div
           key={country.alpha3Code}
           className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] ${
