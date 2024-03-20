@@ -1,8 +1,12 @@
+import { ChangeEvent } from "react";
 import { useCountryStore } from "../../store";
 import SortByRegion from "./SortByRegion";
 
 export default function SearchInput() {
   const darkMode = useCountryStore((state) => state.darkMode);
+  const inputValue = useCountryStore((state) => state.inputValue);
+  const setInputValue = useCountryStore((state) => state.setInputValue);
+  console.log(inputValue);
   return (
     <div className="w-full flex flex-col item-start justify-start gap-[30px]">
       <div
@@ -34,6 +38,10 @@ export default function SearchInput() {
         </svg>
         <input
           type="text"
+          value={inputValue}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => {
+            setInputValue(e.target.value);
+          }}
           placeholder="Search for a country…"
           className={`outline-none placeholder:text-[#C4C4C4] text-[12px] ${
             darkMode
