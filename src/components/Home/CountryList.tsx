@@ -18,25 +18,53 @@ export default function CountryList() {
             alt="country flag"
           />
           <div className="w-full flex flex-col items-start justify-start pl-[24px] gap-[20px]">
-            <h1 className="font-extrabold text-[18px] leading-[26px]">
+            <h1
+              className={`font-extrabold text-[18px] leading-[26px] ${
+                darkMode ? "text-[#ffffff]" : "text-[#111517]"
+              }`}
+            >
               {country.name}
             </h1>
             <div className="w-full flex flex-col items-start justify-start gap-[10px]">
-              <h3 className="text-[#111517] text-[14px] font-semibold leading-[16px]">
+              <h3
+                className={`${
+                  darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                } text-[14px] font-semibold leading-[16px]`}
+              >
                 Population:
-                <span className="text-[#111517] text-[14px] font-light leading-[16px]">
+                <span
+                  className={`${
+                    darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                  } text-[14px] font-light leading-[16px]`}
+                >
                   {country.population}
                 </span>
               </h3>
-              <h3 className="text-[#111517] text-[14px] font-semibold leading-[16px]">
+              <h3
+                className={`${
+                  darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                } text-[14px] font-semibold leading-[16px]`}
+              >
                 Region:
-                <span className="text-[#111517] text-[14px] font-light leading-[16px]">
+                <span
+                  className={`${
+                    darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                  } text-[14px] font-light leading-[16px]`}
+                >
                   {country.region}
                 </span>
               </h3>
-              <h3 className="text-[#111517] text-[14px] font-semibold leading-[16px]">
+              <h3
+                className={`${
+                  darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                } text-[14px] font-semibold leading-[16px]`}
+              >
                 Capital:
-                <span className="text-[#111517] text-[14px] font-light leading-[16px]">
+                <span
+                  className={`${
+                    darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                  } text-[14px] font-light leading-[16px]`}
+                >
                   {country.capital}
                 </span>
               </h3>
