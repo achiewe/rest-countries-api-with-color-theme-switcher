@@ -48,19 +48,39 @@ export default function SortByRegion() {
           darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
         } absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
       >
-        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+        <h2
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+            darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
+          }`}
+        >
           Africa
         </h2>
-        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+        <h2
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+            darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
+          }`}
+        >
           America
         </h2>
-        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+        <h2
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+            darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
+          }`}
+        >
           Asia
         </h2>
-        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+        <h2
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+            darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
+          }`}
+        >
           Europe
         </h2>
-        <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
+        <h2
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+            darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
+          }`}
+        >
           Oceania
         </h2>
       </div>
