@@ -44,7 +44,9 @@ export default function SortByRegion() {
       <div
         className={`w-[200px] ${
           openFrame ? "flex" : "hidden"
-        } flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[144px] bg-[#ffffff] absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
+        } flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[144px] ${
+          darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
+        } absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
       >
         <h2 className="text-[12px] leading-[16px] font-normal cursor-pointer">
           Africa
