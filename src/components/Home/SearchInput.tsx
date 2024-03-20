@@ -6,7 +6,7 @@ export default function SearchInput() {
   const darkMode = useCountryStore((state) => state.darkMode);
   const inputValue = useCountryStore((state) => state.inputValue);
   const setInputValue = useCountryStore((state) => state.setInputValue);
-  console.log(inputValue);
+
   return (
     <div className="w-full flex flex-col item-start justify-start gap-[30px]">
       <div

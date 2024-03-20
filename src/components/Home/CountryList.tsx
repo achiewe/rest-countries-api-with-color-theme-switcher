@@ -1,15 +1,20 @@
 import Data from "../../../data.json";
 import { useCountryStore } from "../../store";
+import { CountryType } from "../../type";
 
 export default function CountryList() {
   const darkMode = useCountryStore((state) => state.darkMode);
   const setFetchData = useCountryStore((state) => state.setFetchData);
   const fetchData = useCountryStore((state) => state.fetchData);
+  const inputValue = useCountryStore((state) => state.inputValue);
   setFetchData(Data);
+  const filteredCountries = fetchData.filter((country: CountryType) =>
+    country?.name?.toLowerCase().includes(inputValue.toLowerCase())
+  );
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
-      {fetchData.map((country) => (
+      {filteredCountries.map((country) => (
         <div
           key={country.alpha3Code}
           className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] ${
