@@ -63,7 +63,7 @@ export default function SortByRegion() {
           Africa
         </h2>
         <h2
-          onClick={() => handleRegionClick("America")}
+          onClick={() => handleRegionClick("Americas")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
