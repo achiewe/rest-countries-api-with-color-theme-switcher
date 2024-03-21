@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Data from "../../../data.json";
 import { useCountryStore } from "../../store";
 import { CountryType } from "../../type";
+import { useNavigate } from "react-router-dom";
 
 export default function CountryList() {
   const darkMode = useCountryStore((state) => state.darkMode);
@@ -10,6 +11,7 @@ export default function CountryList() {
   const inputValue = useCountryStore((state) => state.inputValue);
   const selectedRegion = useCountryStore((state) => state.selectedRegion);
   const selectedCountry = useCountryStore((state) => state.selectedCountry);
+  const navigate = useNavigate();
   const setSelectedCountry = useCountryStore(
     (state) => state.setSelectedCountry
   );
@@ -32,6 +34,7 @@ export default function CountryList() {
           key={country.alpha3Code}
           onClick={() => {
             setSelectedCountry(country);
+            navigate("/Detail");
           }}
           className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] cursor-pointer ${
             darkMode ? "bg-[##2B3844]" : "bg-[#ffffff]"
