@@ -4,6 +4,7 @@ import { useCountryStore } from "../../store";
 export default function SortByRegion() {
   const darkMode = useCountryStore((state) => state.darkMode);
   const setSelectedRegion = useCountryStore((state) => state.setSelectedRegion);
+  const selectedRegion = useCountryStore((state) => state.selectedRegion);
 
   const [openFrame, setOpenFrame] = useState<boolean>(false);
   const [arrowRotation, setArrowRotation] = useState<number>(0);
@@ -12,6 +13,8 @@ export default function SortByRegion() {
     setOpenFrame(!openFrame);
     setArrowRotation(openFrame ? 0 : 180);
   };
+
+  console.log(selectedRegion, "mevarselect");
 
   const handleRegionClick = (region: string) => {
     setSelectedRegion(region);
@@ -55,6 +58,7 @@ export default function SortByRegion() {
         } absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
       >
         <h2
+          onClick={() => handleRegionClick("Africa")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
@@ -62,6 +66,7 @@ export default function SortByRegion() {
           Africa
         </h2>
         <h2
+          onClick={() => handleRegionClick("America")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
@@ -69,6 +74,7 @@ export default function SortByRegion() {
           America
         </h2>
         <h2
+          onClick={() => handleRegionClick("Asia")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
@@ -76,6 +82,7 @@ export default function SortByRegion() {
           Asia
         </h2>
         <h2
+          onClick={() => handleRegionClick("Europe")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
@@ -83,6 +90,7 @@ export default function SortByRegion() {
           Europe
         </h2>
         <h2
+          onClick={() => handleRegionClick("Oceania")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
