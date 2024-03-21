@@ -6,7 +6,9 @@ export default function BackButton() {
   const navigate = useNavigate();
   return (
     <button
-      className="w-[104px] flex flex-row gap-[10px] justify-center items-center py-[10px] shadow-md rounded-[2px] bg-[#ffffff] cursor-pointer hover:bg-[#E6E6E6]"
+      className={`w-[104px] flex flex-row gap-[10px] justify-center items-center py-[10px] shadow-md rounded-[2px] ${
+        darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
+      }  cursor-pointer hover:bg-[#E6E6E6]`}
       onClick={() => {
         navigate("/");
       }}

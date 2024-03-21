@@ -149,7 +149,7 @@ export default function CountryInfo() {
           <div className="w-full flex flex-row items-center justify-start gap-[5px]">
             {selectedCountry?.borders?.map((border) => (
               <div
-                key={border} // Adding a unique key for each item in the list
+                key={border}
                 className="w-[96px] h-[28px] flex items-center justify-center shadow border border-gray-400 border-opacity-20"
               >
                 <span
@@ -157,7 +157,7 @@ export default function CountryInfo() {
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
                   }`}
                 >
-                  {border} {/* Displaying the country name */}
+                  {border}
                 </span>
               </div>
             ))}
