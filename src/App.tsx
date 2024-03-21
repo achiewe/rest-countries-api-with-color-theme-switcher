@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div
-        className={`w-full min-h-screen flex flex-col ${
+        className={`w-full min-h-screen flex flex-col pb-[40px] ${
           darkMode ? "bg-[#202C36]" : "bg-[#fafafa]"
         }`}
       >
