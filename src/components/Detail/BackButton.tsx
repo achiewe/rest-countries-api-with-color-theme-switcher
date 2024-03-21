@@ -27,7 +27,13 @@ export default function BackButton() {
           fill={darkMode ? "#ffffff" : "#111517"}
         />
       </svg>
-      <h3 className="text-[14px] font-light leading-[16px]">Back</h3>
+      <h3
+        className={`text-[14px] font-light leading-[16px] ${
+          darkMode ? "text-[#ffffff]" : "text-[#2B3844]"
+        }`}
+      >
+        Back
+      </h3>
     </button>
   );
 }
