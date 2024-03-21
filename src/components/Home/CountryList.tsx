@@ -10,7 +10,6 @@ export default function CountryList() {
   const fetchData = useCountryStore((state) => state.fetchData);
   const inputValue = useCountryStore((state) => state.inputValue);
   const selectedRegion = useCountryStore((state) => state.selectedRegion);
-  const selectedCountry = useCountryStore((state) => state.selectedCountry);
   const navigate = useNavigate();
   const setSelectedCountry = useCountryStore(
     (state) => state.setSelectedCountry
