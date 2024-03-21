@@ -4,6 +4,7 @@ import { useCountryStore } from "../../store";
 export default function SortByRegion() {
   const darkMode = useCountryStore((state) => state.darkMode);
   const setSelectedRegion = useCountryStore((state) => state.setSelectedRegion);
+  const selectedRegion = useCountryStore((state) => state.selectedRegion);
 
   const [openFrame, setOpenFrame] = useState<boolean>(false);
   const [arrowRotation, setArrowRotation] = useState<number>(0);
@@ -30,7 +31,7 @@ export default function SortByRegion() {
           darkMode ? "text-[#ffffff]" : "text-[#000000]"
         }`}
       >
-        Filter by Region
+        {selectedRegion === "" ? " Filter by Region" : selectedRegion}
       </h3>
 
       <svg
