@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { useCountryStore } from "../../store";
 
 export default function BackButton() {
   const darkMode = useCountryStore((state) => state.darkMode);
+  const navigate = useNavigate();
   return (
     <button className="w-[104px] flex flex-row gap-[10px] justify-center items-center py-[10px] shadow-md rounded-[2px] bg-[#ffffff] cursor-pointer">
       <svg
@@ -18,7 +20,14 @@ export default function BackButton() {
           fill={darkMode ? "#ffffff" : "#111517"}
         />
       </svg>
-      <h3 className="text-[14px] font-light leading-[16px]"> Back</h3>
+      <h3
+        className="text-[14px] font-light leading-[16px]"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Back
+      </h3>
     </button>
   );
 }

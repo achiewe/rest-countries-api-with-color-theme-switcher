@@ -15,10 +15,11 @@ export default function CountryList() {
   const setSelectedCountry = useCountryStore(
     (state) => state.setSelectedCountry
   );
-  console.log(selectedCountry, "mevar ukanas");
+
   useEffect(() => {
     setFetchData(Data);
-  }, [setFetchData]);
+  }, []);
+
   const filteredCountries = fetchData.filter((country: CountryType) => {
     const regionFilter = !selectedRegion || country.region === selectedRegion;
     const nameFilter = country?.name
