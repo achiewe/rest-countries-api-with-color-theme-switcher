@@ -22,7 +22,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                Native Name:
+                Native Name:{" "}
                 <span
                   className={`text-[14px] font-normal leading-[32px] ${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -36,7 +36,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 } `}
               >
-                Population:
+                Population:{" "}
                 <span
                   className={`text-[14px] font-normal leading-[32px] ${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -50,7 +50,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                Region:
+                Region:{" "}
                 <span
                   className={`text-[14px] font-normal leading-[32px] ${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -64,7 +64,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                Sub Region:
+                Sub Region:{" "}
                 <span
                   className={`text-[14px] font-normal leading-[32px] ${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -78,7 +78,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                Capital:
+                Capital:{" "}
                 <span
                   className={`text-[14px] font-normal leading-[32px] ${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -95,7 +95,7 @@ export default function CountryInfo() {
                 darkMode ? "text-[#ffffff]" : "text-[#111517]"
               }`}
             >
-              Top Level Domain:
+              Top Level Domain:{" "}
               <span
                 className={`text-[14px] font-normal leading-[32px] ${
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -109,7 +109,7 @@ export default function CountryInfo() {
                 darkMode ? "text-[#ffffff]" : "text-[#111517]"
               }`}
             >
-              Currencies:
+              Currencies:{" "}
               <span
                 className={`text-[14px] font-normal leading-[32px] ${
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -125,7 +125,7 @@ export default function CountryInfo() {
                 darkMode ? "text-[#ffffff]" : "text-[#111517]"
               }`}
             >
-              Languages:
+              Languages:{" "}
               <span
                 className={`text-[14px] font-normal leading-[32px] ${
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"

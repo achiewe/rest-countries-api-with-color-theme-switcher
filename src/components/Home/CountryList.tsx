@@ -59,7 +59,7 @@ export default function CountryList() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 } text-[14px] font-semibold leading-[16px]`}
               >
-                Population:
+                Population:{" "}
                 <span
                   className={`${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -73,7 +73,7 @@ export default function CountryList() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 } text-[14px] font-semibold leading-[16px]`}
               >
-                Region:
+                Region:{" "}
                 <span
                   className={`${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
@@ -87,7 +87,7 @@ export default function CountryList() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 } text-[14px] font-semibold leading-[16px]`}
               >
-                Capital:
+                Capital:{" "}
                 <span
                   className={`${
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
