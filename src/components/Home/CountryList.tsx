@@ -9,13 +9,13 @@ export default function CountryList() {
   const inputValue = useCountryStore((state) => state.inputValue);
   const selectedRegion = useCountryStore((state) => state.selectedRegion);
   setFetchData(Data);
-  const filteredCountries = selectedRegion
-    ? fetchData.filter(
-        (country: CountryType) => country.region === selectedRegion
-      )
-    : fetchData.filter((country: CountryType) =>
-        country?.name?.toLowerCase().includes(inputValue.toLowerCase())
-      );
+  const filteredCountries = fetchData.filter((country: CountryType) => {
+    const regionFilter = !selectedRegion || country.region === selectedRegion;
+    const nameFilter = country?.name
+      ?.toLowerCase()
+      .includes(inputValue.toLowerCase());
+    return regionFilter && nameFilter;
+  });
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
