@@ -3,7 +3,9 @@ import { useCountryStore } from "../../store";
 export default function CountryInfo() {
   const darkMode = useCountryStore((state) => state.darkMode);
   const selectedCountry = useCountryStore((state) => state.selectedCountry);
-  return (
+  return selectedCountry === null ? (
+    <div>Not selected country</div>
+  ) : (
     <div className="w-full flex flex-col gap-[20px] items-start justify-start">
       <img src={selectedCountry?.flag} alt="country flag" />
       <div className="w-full flex flex-col gap-[30px] items-start justify-start">
@@ -12,7 +14,7 @@ export default function CountryInfo() {
             <h1
               className={`font-extrabold text-[22px] leading-[30.01px] ${
                 darkMode ? "text-[#ffffff]" : "text-[#111517]"
-              } `}
+              }`}
             >
               {selectedCountry?.name}
             </h1>
@@ -34,7 +36,7 @@ export default function CountryInfo() {
               <h3
                 className={`text-[14px] font-semibold leading-[32px] ${
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
-                } `}
+                }`}
               >
                 Population:{" "}
                 <span
