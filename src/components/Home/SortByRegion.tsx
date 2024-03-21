@@ -3,6 +3,7 @@ import { useCountryStore } from "../../store";
 
 export default function SortByRegion() {
   const darkMode = useCountryStore((state) => state.darkMode);
+  const setSelectedRegion = useCountryStore((state) => state.setSelectedRegion);
 
   const [openFrame, setOpenFrame] = useState<boolean>(false);
   const [arrowRotation, setArrowRotation] = useState<number>(0);
@@ -10,6 +11,11 @@ export default function SortByRegion() {
   const toggleFrameVisibility = () => {
     setOpenFrame(!openFrame);
     setArrowRotation(openFrame ? 0 : 180);
+  };
+
+  const handleRegionClick = (region: string) => {
+    setSelectedRegion(region);
+    toggleFrameVisibility();
   };
 
   return (
