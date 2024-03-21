@@ -2,9 +2,10 @@ import { useCountryStore } from "../../store";
 
 export default function CountryInfo() {
   const darkMode = useCountryStore((state) => state.darkMode);
+  const selectedCountry = useCountryStore((state) => state.selectedCountry);
   return (
     <div className="w-full flex flex-col gap-[20px] items-start justify-start">
-      <img src="aaasd" alt="country flag" />
+      <img src={selectedCountry?.flag} alt="country flag" />
       <div className="w-full flex flex-col gap-[30px] items-start justify-start">
         <div className="flex flex-col gap-[30px] items-start justify-start">
           <div className="flex flex-col gap-[20px] items-start justify-start">
@@ -13,7 +14,7 @@ export default function CountryInfo() {
                 darkMode ? "text-[#ffffff]" : "text-[#111517]"
               } `}
             >
-              belgium
+              {selectedCountry?.name}
             </h1>
             <div className="flex flex-col gap-[5px] items-start justify-start">
               <h3
@@ -27,7 +28,7 @@ export default function CountryInfo() {
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
                   }`}
                 >
-                  België
+                  {selectedCountry?.nativeName}
                 </span>
               </h3>
               <h3
@@ -41,7 +42,7 @@ export default function CountryInfo() {
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
                   }`}
                 >
-                  1212122
+                  {selectedCountry?.population?.toLocaleString()}
                 </span>
               </h3>
               <h3
@@ -55,7 +56,7 @@ export default function CountryInfo() {
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
                   }`}
                 >
-                  Europe
+                  {selectedCountry?.region}
                 </span>
               </h3>
               <h3
@@ -83,7 +84,7 @@ export default function CountryInfo() {
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
                   }`}
                 >
-                  België
+                  {selectedCountry?.capital}
                 </span>
               </h3>
             </div>
@@ -100,7 +101,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                België
+                {selectedCountry?.topLevelDomain}
               </span>
             </h3>
             <h3
@@ -114,7 +115,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                1212122
+                {selectedCountry?.currencies[0].name}
               </span>
             </h3>
             <h3
@@ -128,7 +129,7 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                Europe
+                {selectedCountry?.languages[0].name}
               </span>
             </h3>
           </div>
