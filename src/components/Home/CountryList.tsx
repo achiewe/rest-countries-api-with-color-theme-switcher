@@ -7,10 +7,15 @@ export default function CountryList() {
   const setFetchData = useCountryStore((state) => state.setFetchData);
   const fetchData = useCountryStore((state) => state.fetchData);
   const inputValue = useCountryStore((state) => state.inputValue);
+  const selectedRegion = useCountryStore((state) => state.selectedRegion);
   setFetchData(Data);
-  const filteredCountries = fetchData.filter((country: CountryType) =>
-    country?.name?.toLowerCase().includes(inputValue.toLowerCase())
-  );
+  const filteredCountries = selectedRegion
+    ? fetchData.filter(
+        (country: CountryType) => country.region === selectedRegion
+      )
+    : fetchData.filter((country: CountryType) =>
+        country?.name?.toLowerCase().includes(inputValue.toLowerCase())
+      );
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">

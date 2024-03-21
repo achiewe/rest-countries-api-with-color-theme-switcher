@@ -14,8 +14,6 @@ export default function SortByRegion() {
     setArrowRotation(openFrame ? 0 : 180);
   };
 
-  console.log(selectedRegion, "mevarselect");
-
   const handleRegionClick = (region: string) => {
     setSelectedRegion(region);
     toggleFrameVisibility();
