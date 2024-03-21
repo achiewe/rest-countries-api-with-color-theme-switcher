@@ -115,7 +115,9 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                {selectedCountry?.currencies[0].name}
+                {selectedCountry?.currencies
+                  ?.map((currency) => currency.name)
+                  .join(", ")}
               </span>
             </h3>
             <h3
@@ -129,7 +131,9 @@ export default function CountryInfo() {
                   darkMode ? "text-[#ffffff]" : "text-[#111517]"
                 }`}
               >
-                {selectedCountry?.languages[0].name}
+                {selectedCountry?.languages
+                  ?.map((language) => language.name)
+                  .join(", ")}
               </span>
             </h3>
           </div>
