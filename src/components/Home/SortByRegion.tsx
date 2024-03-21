@@ -31,7 +31,7 @@ export default function SortByRegion() {
           darkMode ? "text-[#ffffff]" : "text-[#000000]"
         }`}
       >
-        {selectedRegion === "" ? " Filter by Region" : selectedRegion}
+        {selectedRegion === "" ? "not select country" : selectedRegion}
       </h3>
 
       <svg
@@ -55,6 +55,14 @@ export default function SortByRegion() {
           darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
         } absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
       >
+        <h2
+          onClick={() => handleRegionClick("")}
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+            darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
+          }`}
+        >
+          no select country
+        </h2>
         <h2
           onClick={() => handleRegionClick("Africa")}
           className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
