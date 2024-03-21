@@ -4,7 +4,6 @@ import { useCountryStore } from "../../store";
 export default function SortByRegion() {
   const darkMode = useCountryStore((state) => state.darkMode);
   const setSelectedRegion = useCountryStore((state) => state.setSelectedRegion);
-  const selectedRegion = useCountryStore((state) => state.selectedRegion);
 
   const [openFrame, setOpenFrame] = useState<boolean>(false);
   const [arrowRotation, setArrowRotation] = useState<number>(0);
