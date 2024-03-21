@@ -9,10 +9,10 @@ export default function Header() {
     <div
       className={`w-full flex flex-row items-center justify-between ${
         darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
-      } px-[16px] py-[30px] shadow-sm mb-[30px]`}
+      } px-[16px] py-[30px] shadow-sm mb-[30px] md:px-[80px] md:py-[24px]`}
     >
       <h1
-        className={`font-extrabold text-[14px] leading-[20px] ${
+        className={`font-extrabold text-[14px] leading-[20px] md:text-[20px] lg:text-[24px] ${
           darkMode ? "text-[#ffffff]" : "text-[##111517]"
         }`}
       >
@@ -27,10 +27,10 @@ export default function Header() {
         <img
           src={darkMode ? darkMoon : lightMoon}
           alt="light moon"
-          className="w-[16px] h-[16px]"
+          className="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"
         />
         <h2
-          className={`font-semibold text-[12px] leading-[16.37px]  ${
+          className={`font-semibold text-[12px] leading-[16.37px] md:text-[16px]  ${
             darkMode ? "text-[#ffffff]" : "text-[##111517]"
           }`}
         >
