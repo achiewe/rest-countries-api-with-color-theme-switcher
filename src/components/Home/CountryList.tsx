@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Data from "../../../data.json";
 import { useCountryStore } from "../../store";
 import { CountryType } from "../../type";
@@ -9,7 +9,14 @@ export default function CountryList() {
   const fetchData = useCountryStore((state) => state.fetchData);
   const inputValue = useCountryStore((state) => state.inputValue);
   const selectedRegion = useCountryStore((state) => state.selectedRegion);
-  setFetchData(Data);
+  const selectedCountry = useCountryStore((state) => state.selectedCountry);
+  const setSelectedCountry = useCountryStore(
+    (state) => state.setSelectedCountry
+  );
+  console.log(selectedCountry, "mevar ukanas");
+  useEffect(() => {
+    setFetchData(Data);
+  }, [setFetchData]);
   const filteredCountries = fetchData.filter((country: CountryType) => {
     const regionFilter = !selectedRegion || country.region === selectedRegion;
     const nameFilter = country?.name
@@ -20,9 +27,12 @@ export default function CountryList() {
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-[20px]">
-      {filteredCountries.map((country) => (
+      {filteredCountries.map((country: CountryType) => (
         <div
           key={country.alpha3Code}
+          onClick={() => {
+            setSelectedCountry(country);
+          }}
           className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] cursor-pointer ${
             darkMode ? "bg-[##2B3844]" : "bg-[#ffffff]"
           }  gap-[20px]`}
