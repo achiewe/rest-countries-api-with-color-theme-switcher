@@ -150,7 +150,11 @@ export default function CountryInfo() {
           </h3>
           <div className="w-full flex flex-row items-center justify-start gap-[5px]">
             {selectedCountry?.borders === undefined ? (
-              <h3 className="text-[16px] font-light leading-[16.37px]">
+              <h3
+                className={`text-[16px] font-light leading-[16.37px] ${
+                  darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                }`}
+              >
                 No borders
               </h3>
             ) : (
