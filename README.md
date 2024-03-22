@@ -53,8 +53,9 @@ in a given project, the Rest Countries API with Color Theme Switcher, developed 
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/) - this resource provided a solution for resolving a specific coding issue i encountered in my project. i found the explanation clear and the suggested pattern highly effective..
-- [Example resource 2](https://www.figma.com/) - i utilize Figma as my primary design tool for crafting projects, leveraging its intuitive interface and collaborative features.
+- (https://stackoverflow.com/) - this resource provided a solution for resolving a specific coding issue i encountered in my project. i found the explanation clear and the suggested pattern highly effective..
+
+- (https://www.figma.com/) - i utilize Figma as my primary design tool for crafting projects, leveraging its intuitive interface and collaborative features.
 
 ## Author
 
