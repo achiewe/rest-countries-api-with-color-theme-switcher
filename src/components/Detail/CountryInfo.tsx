@@ -149,20 +149,26 @@ export default function CountryInfo() {
             Border Countries:
           </h3>
           <div className="w-full flex flex-row items-center justify-start gap-[5px]">
-            {selectedCountry?.borders?.map((border) => (
-              <div
-                key={border}
-                className="w-[96px] h-[28px] flex items-center justify-center shadow border border-gray-400 border-opacity-20"
-              >
-                <span
-                  className={`text-[12px] font-light leading-[16.37px] ${
-                    darkMode ? "text-[#ffffff]" : "text-[#111517]"
-                  }`}
+            {selectedCountry?.borders === undefined ? (
+              <h3 className="text-[16px] font-light leading-[16.37px]">
+                No borders
+              </h3>
+            ) : (
+              selectedCountry?.borders?.map((border) => (
+                <div
+                  key={border}
+                  className="w-[96px] h-[28px] flex items-center justify-center shadow border border-gray-400 border-opacity-20"
                 >
-                  {border}
-                </span>
-              </div>
-            ))}
+                  <span
+                    className={`text-[12px] font-light leading-[16.37px] ${
+                      darkMode ? "text-[#ffffff]" : "text-[#111517]"
+                    }`}
+                  >
+                    {border}
+                  </span>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>
