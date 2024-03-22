@@ -22,9 +22,9 @@ export default function SortByRegion() {
   return (
     <div
       onClick={toggleFrameVisibility} // Toggle visibility and arrow rotation
-      className={`w-[200px] ${
+      className={`${
         darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
-      }  flex flex-grow justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md relative`}
+      }  flex flex-grow justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md relative w-[200px]`}
     >
       <h3
         className={`font-normal text-[12px] leading-[20px] ${
@@ -51,7 +51,7 @@ export default function SortByRegion() {
       <div
         className={`w-[200px] ${
           openFrame ? "flex" : "hidden"
-        } flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[144px] ${
+        } flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[160px] ${
           darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
         } absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
       >
