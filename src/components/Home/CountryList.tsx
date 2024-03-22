@@ -28,7 +28,7 @@ export default function CountryList() {
   });
 
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-[20px]">
+    <div className="w-full flex flex-col justify-center items-center gap-[20px] md:flex-row md:flex-wrap">
       {filteredCountries.map((country: CountryType) => (
         <div
           key={country.alpha3Code}
@@ -65,7 +65,7 @@ export default function CountryList() {
                     darkMode ? "text-[#ffffff]" : "text-[#111517]"
                   } text-[14px] font-light leading-[16px]`}
                 >
-                  {country.population}
+                  {country.population?.toLocaleString()}
                 </span>
               </h3>
               <h3
