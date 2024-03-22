@@ -44,7 +44,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Zustand] (https://www.npmjs.com/package/zustand) - State Managment
+- [Zustand](https://www.npmjs.com/package/zustand) - State Managment
 - [tailwind](https://tailwindcss.com/) - For styles
 
 ### What I learned
