@@ -43,7 +43,7 @@ export default function SearchInput() {
             setInputValue(e.target.value);
           }}
           placeholder="Search for a country…"
-          className={`outline-none placeholder:text-[#C4C4C4] text-[12px] ${
+          className={`outline-none placeholder:text-[#C4C4C4] text-[12px] lg:text-[16px] ${
             darkMode
               ? "bg-[#2B3844] text-[#ffff]"
               : "bg-[#ffffff] text-[#2B3844]"

@@ -24,10 +24,10 @@ export default function SortByRegion() {
       onClick={toggleFrameVisibility} // Toggle visibility and arrow rotation
       className={`${
         darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
-      }  flex justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md relative w-[200px]`}
+      }  flex justify-between items-center px-[14px] py-[19px] rounded-[5px] shadow-md relative w-[200px] cursor-pointer`}
     >
       <h3
-        className={`font-normal text-[12px] leading-[20px] ${
+        className={`font-normal text-[12px] leading-[20px] lg:text-[16px] ${
           darkMode ? "text-[#ffffff]" : "text-[#000000]"
         }`}
       >
@@ -51,13 +51,13 @@ export default function SortByRegion() {
       <div
         className={`${
           openFrame ? "flex" : "hidden"
-        } flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[160px] w-[200px] ${
+        } flex-col items-start justify-start px-[14px] gap-[8px] py-[16px] h-[160px] w-[200px] lg:gap-[15px] lg:h-[200px] ${
           darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
         } absolute bottom-0 left-0 right-0 top-[62px] rounded-[5px]`}
       >
         <h2
           onClick={() => handleRegionClick("")}
-          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer lg:text-[15px] hover:text-[#e2e2e2] ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
@@ -65,7 +65,7 @@ export default function SortByRegion() {
         </h2>
         <h2
           onClick={() => handleRegionClick("Africa")}
-          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer lg:text-[15px] hover:text-[#e2e2e2] ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
@@ -73,7 +73,7 @@ export default function SortByRegion() {
         </h2>
         <h2
           onClick={() => handleRegionClick("Americas")}
-          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer lg:text-[15px] hover:text-[#e2e2e2]  ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
@@ -81,7 +81,7 @@ export default function SortByRegion() {
         </h2>
         <h2
           onClick={() => handleRegionClick("Asia")}
-          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer lg:text-[15px] hover:text-[#e2e2e2]  ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
@@ -89,7 +89,7 @@ export default function SortByRegion() {
         </h2>
         <h2
           onClick={() => handleRegionClick("Europe")}
-          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer lg:text-[15px] hover:text-[#e2e2e2] ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
@@ -97,7 +97,7 @@ export default function SortByRegion() {
         </h2>
         <h2
           onClick={() => handleRegionClick("Oceania")}
-          className={`text-[12px] leading-[16px] font-normal cursor-pointer ${
+          className={`text-[12px] leading-[16px] font-normal cursor-pointer lg:text-[15px] hover:text-[#e2e2e2]  ${
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
