@@ -77,7 +77,7 @@ export default function SortByRegion() {
             darkMode ? "text-[#FFFFFF]" : "text-[#111517]"
           }`}
         >
-          America
+          Americas
         </h2>
         <h2
           onClick={() => handleRegionClick("Asia")}
