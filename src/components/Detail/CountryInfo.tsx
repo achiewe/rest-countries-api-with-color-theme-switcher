@@ -6,7 +6,7 @@ export default function CountryInfo() {
   return selectedCountry === null ? (
     <div>Not selected country</div>
   ) : (
-    <div className="w-full flex flex-col gap-[20px] items-start justify-start md:flex-row md:justify-between max-w-[1110px]">
+    <div className="w-full flex flex-col gap-[20px] items-start justify-start md:flex-row md:justify-between max-w-[1110px] md:items-center">
       <img
         src={selectedCountry?.flag}
         alt="country flag"
