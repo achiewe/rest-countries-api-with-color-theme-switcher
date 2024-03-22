@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://rest-countries-api-with-color-theme-switcher-achiewe.vercel.app/]
 
 ## My process
 
@@ -48,6 +48,8 @@ Users should be able to:
 - [tailwind](https://tailwindcss.com/) - For styles
 
 ### What I learned
+
+in a given project, the Rest Countries API with Color Theme Switcher, developed using React.js, TypeScript, and Zustand, i obtain valuable insights, deepened understanding of react.js for component-based development, state management, and routing with React Router. i use Zustand to simplify state handling in the React context, resulting in improved performance. implemented visual customization options using css variables and dynamic theming. increase skills in data manipulation and algorithmic thinking. structured project for improved code organization, readability, and maintenance.
 
 ### Useful resources
 
