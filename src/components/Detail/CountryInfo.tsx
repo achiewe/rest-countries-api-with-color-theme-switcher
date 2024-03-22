@@ -6,8 +6,12 @@ export default function CountryInfo() {
   return selectedCountry === null ? (
     <div>Not selected country</div>
   ) : (
-    <div className="w-full flex flex-col gap-[20px] items-start justify-start">
-      <img src={selectedCountry?.flag} alt="country flag" />
+    <div className="w-full flex flex-col gap-[20px] items-start justify-start md:flex-row md:justify-between max-w-[1110px] md:gap-[70px]">
+      <img
+        src={selectedCountry?.flag}
+        alt="country flag"
+        className="rounded-[5px]"
+      />
       <div className="w-full flex flex-col gap-[30px] items-start justify-start">
         <div className="flex flex-col gap-[30px] items-start justify-start">
           <div className="flex flex-col gap-[20px] items-start justify-start">
