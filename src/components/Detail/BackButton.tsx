@@ -8,7 +8,7 @@ export default function BackButton() {
     <button
       className={`w-[104px] flex flex-row gap-[10px] justify-center items-center py-[10px] shadow-md rounded-[2px] ${
         darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"
-      }  cursor-pointer hover:bg-[#E6E6E6]`}
+      }  cursor-pointer hover:bg-[#a2a2a2]`}
       onClick={() => {
         navigate("/");
       }}
