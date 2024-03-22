@@ -8,7 +8,7 @@ export default function SearchInput() {
   const setInputValue = useCountryStore((state) => state.setInputValue);
 
   return (
-    <div className="w-full flex flex-col item-start justify-start gap-[30px] sm:flex-row sm:justify-between">
+    <div className="w-full flex flex-col item-start justify-start gap-[30px] sm:flex-row sm:justify-between max-w-[1250px]">
       <div
         className={`w-full flex flex-row items-center gap-[30px] sm:w-[480px] ${
           darkMode ? "bg-[#2B3844]" : "bg-[#ffffff]"

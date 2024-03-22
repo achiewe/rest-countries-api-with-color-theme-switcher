@@ -28,7 +28,7 @@ export default function CountryList() {
   });
 
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-[20px] md:flex-row md:flex-wrap md:gap-[30px]">
+    <div className="w-full flex flex-col justify-center items-center gap-[30px] md:flex-row md:flex-wrap lg:gap-[40px] lg:justify-between max-w-[1250px]">
       {filteredCountries.map((country: CountryType) => (
         <div
           key={country.alpha3Code}
@@ -36,7 +36,7 @@ export default function CountryList() {
             setSelectedCountry(country);
             navigate("/Detail");
           }}
-          className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] cursor-pointer h-[352px] ${
+          className={`w-[264px] rounded-[5px] flex flex-col shadow-lg pb-[46px] cursor-pointer h-[400px] ${
             darkMode ? "bg-[##2B3844]" : "bg-[#ffffff]"
           }  gap-[20px]`}
         >
