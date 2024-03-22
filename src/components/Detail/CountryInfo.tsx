@@ -10,7 +10,7 @@ export default function CountryInfo() {
       <img
         src={selectedCountry?.flag}
         alt="country flag"
-        className="rounded-[5px]"
+        className="rounded-[5px] w-[500px]"
       />
       <div className="w-full flex flex-col gap-[30px] items-start justify-start">
         <div className="flex flex-col gap-[30px] items-start justify-start">
@@ -152,7 +152,7 @@ export default function CountryInfo() {
           >
             Border Countries:
           </h3>
-          <div className="w-full flex flex-row items-center justify-start gap-[5px]">
+          <div className="w-full flex flex-row flex-wrap items-center justify-start gap-[5px]">
             {selectedCountry?.borders === undefined ? (
               <h3
                 className={`text-[16px] font-light leading-[16.37px] ${
