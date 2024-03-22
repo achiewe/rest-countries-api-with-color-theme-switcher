@@ -6,14 +6,14 @@ export default function CountryInfo() {
   return selectedCountry === null ? (
     <div>Not selected country</div>
   ) : (
-    <div className="w-full flex flex-col gap-[20px] items-start justify-start md:flex-row md:justify-between max-w-[1110px] md:items-center">
+    <div className="w-full flex flex-col gap-[20px] items-start justify-start md:flex-row md:justify-between max-w-[1110px] md:items-center md:gap-[80px]">
       <img
         src={selectedCountry?.flag}
         alt="country flag"
         className="rounded-[5px] w-[500px]"
       />
-      <div className="w-full flex flex-col gap-[30px] items-start justify-start md:max-w-[598px]">
-        <div className="flex flex-col gap-[30px] items-start justify-start">
+      <div className="w-full flex flex-col gap-[30px] items-start justify-start ">
+        <div className="flex flex-col gap-[30px] items-start justify-start lg:flex-row lg:items-center lg:w-full lg:justify-between">
           <div className="flex flex-col gap-[20px] items-start justify-start">
             <h1
               className={`font-extrabold text-[22px] leading-[30.01px] ${
@@ -144,9 +144,9 @@ export default function CountryInfo() {
             </h3>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-[15px] items-start justify-start">
+        <div className="w-full flex flex-col gap-[15px] items-start justify-start lg:flex-row lg:items-center">
           <h3
-            className={`text-[16px] font-semibold leading-[24px] ${
+            className={`text-[16px] font-semibold leading-[24px] lg:w-[200px] ${
               darkMode ? "text-[#ffffff]" : "text-[#111517]"
             }`}
           >
