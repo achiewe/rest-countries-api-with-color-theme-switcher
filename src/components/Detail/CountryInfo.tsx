@@ -1,6 +1,7 @@
 import { useCountryStore } from "../../store";
 
 export default function CountryInfo() {
+  // states for change the mode and for take the selected country
   const darkMode = useCountryStore((state) => state.darkMode);
   const selectedCountry = useCountryStore((state) => state.selectedCountry);
   return selectedCountry === null ? (
