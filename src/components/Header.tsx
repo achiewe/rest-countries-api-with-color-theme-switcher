@@ -4,6 +4,7 @@ import { useCountryStore } from "../store";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  // state and setState
   const setDarkMode = useCountryStore((state) => state.setDarkMode);
   const darkMode = useCountryStore((state) => state.darkMode);
   return (
