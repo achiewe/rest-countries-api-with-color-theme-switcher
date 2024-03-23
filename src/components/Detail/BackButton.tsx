@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useCountryStore } from "../../store";
 
 export default function BackButton() {
+  // state for mode
   const darkMode = useCountryStore((state) => state.darkMode);
   const navigate = useNavigate();
   return (
